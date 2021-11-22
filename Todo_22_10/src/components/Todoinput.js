@@ -25,7 +25,7 @@ function Todoinput({addData}){
     }
     return (<div id="input-div">
         <div id="plus-div">
-         <button onClick= {handleClick} id="plus-button">+</button>
+         <button onClick= {handleClick} id="plus-button" disabled={!text}>+</button>
          </div>
          <div id="input-div-entry">
         <input type="text"
