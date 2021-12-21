@@ -29,14 +29,14 @@ export const Board = () => {
       [0, 4, 8],
     ];
     for (let x of comibinations) {
-      console.log(x[0]);
+      console.log(x[0],x[1],x[2]);
       if (marks[x[0]] === 1 && marks[x[1]] === 1 && marks[x[2]] === 1) {
       setTimeout(()=>{
         console.log("Player1 won");
         setMarks(new Array(9).fill(0));
         setPlayer(1);
         setPlayer1(true);
-      },1000)
+      },500)
       } else {
         if (marks[x[0]] === 2 && marks[x[1]] === 2 && marks[x[2]] === 2) {
        setTimeout(()=>{
@@ -44,7 +44,7 @@ export const Board = () => {
         setMarks(new Array(9).fill(0));
         setPlayer(1);
         setPlayer2(true);
-       },1000)
+       },500)
         }
       }
     }
